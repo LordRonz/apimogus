@@ -1,1 +1,2 @@
-export const getRandom = <T>(list: T[]): T => list[Math.floor(Math.random()*list.length)];
+export const getRandom = <T>(list: T[]): T =>
+  list[Math.floor(Math.random() * list.length)];

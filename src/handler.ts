@@ -1,5 +1,5 @@
-import amoguses from "./data/amoguses";
-import { getRandom } from "./utils/getRandomChoice";
+import amoguses from './data/amoguses';
+import { getRandom } from './utils/getRandomChoice';
 
 export const handleRequest = async (request: Request): Promise<Response> => {
   switch (request.method) {
@@ -8,6 +8,6 @@ export const handleRequest = async (request: Request): Promise<Response> => {
       return new Response(amogus);
     }
     default:
-      return new Response('Amogus not found', {status: 404});
+      return new Response('Amogus not found', { status: 404 });
   }
 };
