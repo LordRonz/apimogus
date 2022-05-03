@@ -10,6 +10,7 @@
     "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
     "test": "jest --config jestconfig.json --verbose",
     "tsc": "tsc --pretty --noEmit",
+    "deduplicate": "npx yarn-deduplicate && yarn install",
     "prepare": "husky install"
   },
   "author": "lordronz",
